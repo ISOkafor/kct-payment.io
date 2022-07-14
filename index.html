@@ -5,34 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Payment</title>
 </head>
 <body>
     <section>
-        <div class="d-flex">
-            <div class="bg-yellow pb-150" style="width: 35%;">                
-                <p class="title text-center blue mt-100">How would you like to pay?</p>                
-                <div class="text-center mt-150 box-shadow">
-                    <img src="./img/card-choices-main.png" class="rounded-4" alt="Payment Methods">
+        <div class="d-flex column">
+            <div class="bg-yellow pb-150 w-90-sm pb-100" style="width: 35%;">                
+                <p class="title text-center blue mt-100 mt-100-sm">How would you like to pay?</p>                
+                <div class="text-center mt-150 mt-150-sm box-shadow">
+                    <img src="./img/card-choices-main.png" class="rounded-4 img-fluid" alt="Payment Methods">
                 </div>
             </div>
-            <div class="container position-relative" style="width: 55%; padding: 0px 50px;">
-                <div class="container position-absolute mt-150">
+            <div class="container container-sm position-relative w-90 prl" style="width: 55%; padding: 0px 50px;">
+                <div class="container container-sm ml-sm position-absolute mt-100 mt-100-sm prl">
                     <ul class="progressbar" style="list-style: none;">
-                        <li class="active body-small blue">PAYMENT DETAILS</li>
-                        <li class="body-small" style="color: rgba(53, 56, 63, 0.4);">CONFIRMATION</li>                           
+                        <li class="active body-small blue body-small-sm body-small-lg">PAYMENT DETAILS</li>
+                        <li class="body-small body-small-sm body-small-lg" style="color: rgba(53, 56, 63, 0.4);">CONFIRMATION</li>                           
                     </ul>                         
                 </div>
-                <div class="mt-350">
+                <div class="mt-300 mt-300-sm pb-100">
                     <form action="">
-                        <div class="mb-5">
+                        <div class="mb-5 mb-5-sm">
                             <label for="name" class="form-label body-small">Name</label>
                             <input type="text" class="form-control grey-control" id="name" placeholder="">                            
                         </div>
-                        <div class="mb-5">
+                        <div class="mb-5 mb-5-sm">
                             <label for="cardNumber" class="form-label body-small">Card Number</label>
-                            <input type="number" class="form-control grey-control" id="cardNumber" placeholder="**** **** **** ****">                            
+                            <input type="tel" class="form-control grey-control" id="cardNumber" placeholder="**** **** **** ****">                            
                         </div>
                         <div class="mb-4">
                             <label for="expirationDate" class="form-label body-small">Expiration date</label>
@@ -60,7 +61,7 @@
                                     <option value="4" class="label-regular">2025</option>
                                     <option value="5" class="label-regular">2026</option>
                                 </select>
-                                <input type="number" class="form-control grey-control w-30" id="" placeholder="CVC  ***"> 
+                                <input type="password" class="form-control grey-control w-30" id="" placeholder="CVC  ***"> 
                             </div>                           
                         </div>
                         <div class="form-check mb-3">
@@ -69,7 +70,7 @@
                                 Save my card details
                             </label>
                         </div>
-                        <div class="d-flex justify-content-center mt-100">
+                        <div class="d-flex justify-content-center mt-100 mt-100-sm mb-50-md">
                             <button class="btn-payment" type="submit">Confirm payment</button>
                         </div>
                     </form>

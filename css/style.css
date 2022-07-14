@@ -18,8 +18,8 @@ body {
     margin-top: 150px !important;
 }
 
-.mt-350 {
-    margin-top: 350px;
+.mt-300 {
+    margin-top: 300px;
 }
 
 .bg-yellow {
@@ -136,4 +136,117 @@ body {
 
 .mt-100 {
     margin-top: 100px;
+}
+
+/* Mobile View */
+@media (max-width: 426px) {
+    .column {
+        flex-direction: column !important;
+        width: 100% !important;        
+    }
+
+    .w-90-sm {
+        width: 100% !important;
+    }
+
+    .w-90 {
+        width: 90% !important;
+    } 
+    
+    .progressbar li {
+        width: 50%;               
+    }
+
+    .ml-sm {
+        margin-left: -20px !important;
+    }
+
+    .mb-5-sm {
+        margin-bottom: 2rem !important;
+    }
+
+    .mt-100-sm {
+        margin-top: 60px !important;
+    }
+
+    .mt-150-sm {
+        margin-top: 80px !important;
+    }
+
+    .progressbar li:before {
+        width: 30px;
+        height: 30px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .body-small-sm {
+        font-size: 12px !important;
+        font-weight: 400 !important;
+        line-height: 20px !important;        
+    }
+
+    .prl {
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+    }
+
+    .mt-300-sm {
+        margin-top: 180px !important;
+    }
+
+    .pb-100 {
+        padding-bottom: 100px;
+    }
+
+    .progressbar li:after {
+        top: 15px!important;
+    }
+    
+}
+
+@media (max-width: 769px) and (min-width: 426px) {
+    .mt-150-sm {
+        margin-top: 80px !important;
+    } 
+    
+    .mt-300-sm {
+        margin-top: 220px !important;
+    }
+
+    .body-small-lg {
+        font-size: 14px !important;
+        font-weight: 600 !important;
+        line-height: 24px !important;        
+    }
+
+    .progressbar li:before {
+        width: 40px;
+        height: 40px;        
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .progressbar li:after {
+        top: 20px!important;
+    }
+
+    .progressbar li {
+        width: 50%;               
+    }
+
+    .prl {
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+    }
+
+    .mt-100-sm {
+        margin-top: 60px !important;
+    }
+
+    .mb-50-md {
+        margin-bottom: 50px !important;
+    }
 }
