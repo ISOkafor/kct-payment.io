@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/paymentsuccess.css">
-    <title>Payment Unsuccessful</title>
+    <title>Payment Pending ...</title>
 </head>
 <body>
     <!--Header Section-->
@@ -420,12 +420,41 @@
     </header>
 
     <!--Main Section-->
+    <section id="progress">
+        <div class="container container-sm position-relative w-90 prl mt-5" style="width: 55%; padding: 0px 50px;">
+            <div class="container container-sm ml-sm position-absolute mt-100-sm prl">
+                <ul class="progressbar" style="list-style: none;">
+                    <li class="active body-small blue body-small-sm body-small-lg" style="color: rgba(53, 56, 63, 0.4);">PAYMENT DETAILS</li>
+                    <li class="body-small body-small-sm body-small-lg" style="color: #174AAD;">CONFIRMATION</li>                           
+                </ul>                         
+            </div>            
+        </div>
+    </section>
+
     <section>
-       <div class="text-center">
-        <a href="paymentsuccess.html" class="btn-pay">Click here to View paymentsuccess page</a>
-        <a href="paymentpending.html" class="btn-pay">Click here to View paymentpending page</a>
-        <a href="paymentfail.html" class="btn-pay">Click here to View paymentfail page</a>
-       </div>
+        <div class="text-center mt-250">
+            <div class="px">
+              <svg class="svg" width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="75" cy="75" r="73.5" fill="white" stroke="url(#paint0_linear_4901_4445)" stroke-width="3"/>
+                <path d="M49.9993 66.6667C45.416 66.6667 41.666 70.4167 41.666 75.0001C41.666 79.5834 45.416 83.3334 49.9993 83.3334C54.5827 83.3334 58.3327 79.5834 58.3327 75.0001C58.3327 70.4167 54.5827 66.6667 49.9993 66.6667ZM99.9994 66.6667C95.416 66.6667 91.666 70.4167 91.666 75.0001C91.666 79.5834 95.416 83.3334 99.9994 83.3334C104.583 83.3334 108.333 79.5834 108.333 75.0001C108.333 70.4167 104.583 66.6667 99.9994 66.6667ZM74.9994 66.6667C70.416 66.6667 66.666 70.4167 66.666 75.0001C66.666 79.5834 70.416 83.3334 74.9994 83.3334C79.5827 83.3334 83.3327 79.5834 83.3327 75.0001C83.3327 70.4167 79.5827 66.6667 74.9994 66.6667Z" fill="url(#paint1_linear_4901_4445)"/>
+                <defs>
+                <linearGradient id="paint0_linear_4901_4445" x1="75" y1="0" x2="75" y2="150" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#FFE259"/>
+                <stop offset="1" stop-color="#FFA751"/>
+                </linearGradient>
+                <linearGradient id="paint1_linear_4901_4445" x1="74.9994" y1="66.6667" x2="74.9994" y2="83.3334" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#FFE259"/>
+                <stop offset="1" stop-color="#FFA751"/>
+                </linearGradient>
+                </defs>
+              </svg>                                           
+                <h3 class="heading mt-5 payment-pending">Payment Pending...</h3>
+                <p class="body-md-18 mt-3">Please, wait a moment. Your payment transaction is taking time to process.</p>                    
+            </div>
+            <div class="my-80">
+                <a class="btn btn-cancel fw-700" href="#" role="button">Cancel</a>
+            </div>
+        </div>
     </section>
     <!--Footer Section-->
     <footer class="py-5">

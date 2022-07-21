@@ -420,12 +420,39 @@
     </header>
 
     <!--Main Section-->
+    <section id="progress">
+        <div class="container container-sm position-relative w-90 prl mt-5" style="width: 55%; padding: 0px 50px;">
+            <div class="container container-sm ml-sm position-absolute mt-100-sm prl">
+                <ul class="progressbar" style="list-style: none;">
+                    <li class="active body-small blue body-small-sm body-small-lg" style="color: rgba(53, 56, 63, 0.4);">PAYMENT DETAILS</li>
+                    <li class="body-small body-small-sm body-small-lg" style="color: #174AAD;">CONFIRMATION</li>                           
+                </ul>                         
+            </div>            
+        </div>
+    </section>
+
     <section>
-       <div class="text-center">
-        <a href="paymentsuccess.html" class="btn-pay">Click here to View paymentsuccess page</a>
-        <a href="paymentpending.html" class="btn-pay">Click here to View paymentpending page</a>
-        <a href="paymentfail.html" class="btn-pay">Click here to View paymentfail page</a>
-       </div>
+        <div class="text-center mt-250">
+            <div class="px">
+                <svg class="svg" width="161" height="160" viewBox="0 0 161 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="80.5" cy="80" r="78.5" fill="white" stroke="#EB1414" stroke-width="3"/>
+                    <g clip-path="url(#clip0_3747_6959)">
+                    <path d="M111.611 55.1558L105.344 48.8892L80.4998 73.7336L55.6553 48.8892L49.3887 55.1558L74.2331 80.0003L49.3887 104.845L55.6553 111.111L80.4998 86.2669L105.344 111.111L111.611 104.845L86.7664 80.0003L111.611 55.1558Z" fill="#EB1414"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_3747_6959">
+                    <rect width="106.667" height="106.667" fill="white" transform="translate(27.166 26.667)"/>
+                    </clipPath>
+                    </defs>
+                </svg>                    
+                <h3 class="heading mt-5 payment-fail">Payment Unsuccessful</h3>
+                <p class="body-md-18 mt-3">Unfortunately, your transaction was not able to be processed at the moment.</p>                    
+            </div>
+            <div class="my-80 d-flex justify-content-center px-100 px-100-sm">                
+                <a class="btn btn-pay fw-700 me-5 me-20" href="#" role="button">Retry</a>
+                <a class="btn btn-cancel fw-700 ms-5 ms-20" href="#" role="button">Cancel</a>
+            </div>          
+        </div>
     </section>
     <!--Footer Section-->
     <footer class="py-5">
